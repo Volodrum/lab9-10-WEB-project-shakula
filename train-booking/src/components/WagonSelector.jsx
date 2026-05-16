@@ -4,11 +4,11 @@ import styles from './WagonSelector.module.css';
 
 const WagonSelector = () => {
   const { selectedWagon, setSelectedWagon, clearSelection } = useContext(BookingContext);
-  const wagons = [1, 2, 3]; // Доступні вагони
+  const wagons = [1, 2, 3];
 
   const handleWagonChange = (wagonNum) => {
     setSelectedWagon(wagonNum);
-    clearSelection(); // Очищаємо обрані місця при зміні вагона
+    clearSelection();
   };
 
   return (
